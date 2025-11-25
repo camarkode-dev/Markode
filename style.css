@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
 :root {
   --accent: #0ea5a4;
   --bg: #f7f7fb;
@@ -20,7 +23,6 @@
   --base-font: 16px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: var(--base-font); }
