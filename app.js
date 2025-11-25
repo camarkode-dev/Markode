@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "nav-about": "من نحن",
       "nav-services": "خدماتنا",
       "nav-plans": "الباقات",
+      "nav-privacy": "سياسة الخصوصية",
       "nav-contact": "تواصل معنا",
       "hero-welcome": "مرحباً بك في <span class=\"highlighted\">Markode</span>",
       "hero-intro": "وجهتك الذكية للتسويق الرقمي وتطوير البرمجيات، نبتكر الحلول وندعم نموك الرقمي، وندخل أفكارك إلى واقع.",
@@ -163,6 +164,14 @@ document.addEventListener("DOMContentLoaded", function () {
       "label-message": "الرسالة:",
       "submit-btn": "إرسال",
       "order-success": "✅ تم إرسال الطلب بنجاح! سنتواصل معك قريبًا.",
+      "privacy-title": "سياسة الخصوصية",
+      "privacy-p1": "نحن في Markode نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. لا نقوم ببيع أو مشاركة بياناتك مع أي طرف ثالث. جميع البيانات التي نجمعها تُستخدم لتحسين خدماتنا فقط.",
+      "privacy-collect-title": "جمع المعلومات",
+      "privacy-collect": "نجمع معلوماتك عندما تقوم بالتسجيل أو التواصل معنا عبر الموقع.",
+      "privacy-use-title": "الاستخدام",
+      "privacy-use": "تُستخدم البيانات لتحسين تجربة المستخدم وخدمات الموقع.",
+      "privacy-changes-title": "التعديلات على السياسة",
+      "privacy-changes": "قد نقوم بتحديث سياسة الخصوصية من وقت لآخر، وسيتم الإعلان عن أي تغييرات هنا.",
     },
     en: {
       dir: "ltr",
@@ -171,6 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "nav-about": "About",
       "nav-services": "Services",
       "nav-plans": "Plans",
+      "nav-privacy": "Privacy Policy",
       "nav-contact": "Contact",
       "hero-welcome": "Welcome to <span class=\"highlighted\">Markode</span>",
       "hero-intro": "Your smart destination for digital marketing and software development. We create solutions, support your growth, and turn ideas into reality.",
@@ -303,6 +313,14 @@ document.addEventListener("DOMContentLoaded", function () {
       "label-message": "Message:",
       "submit-btn": "Send",
       "order-success": "✅ Order sent successfully! We'll contact you soon.",
+      "privacy-title": "Privacy Policy",
+      "privacy-p1": "At Markode we respect your privacy and are committed to protecting your personal data. We do not sell or share your information with third parties. Any data we collect is used to improve our services only.",
+      "privacy-collect-title": "Information Collection",
+      "privacy-collect": "We collect your information when you register or contact us through the website.",
+      "privacy-use-title": "Use",
+      "privacy-use": "The data is used to improve the user experience and site services.",
+      "privacy-changes-title": "Policy Changes",
+      "privacy-changes": "We may update this privacy policy from time to time; any changes will be published here.",
     }
   };
 
@@ -417,11 +435,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Clear existing content
     navbar.innerHTML = '';
 
+    // Add privacy link; if current page contains a #privacy section, link to the anchor
+    const hasPrivacySection = !!document.getElementById('privacy');
+    const privacyHref = hasPrivacySection ? '#privacy' : 'privacy.html';
+
     const navItems = [
       { id: "nav-home", href: "index.html" },
       { id: "nav-about", href: "about.html" },
       { id: "nav-services", href: "services.html" },
       { id: "nav-plans", href: "plans.html" },
+      { id: "nav-privacy", href: privacyHref },
       { id: "nav-contact", href: "contact.html" }
     ];
 
@@ -430,6 +453,11 @@ document.addEventListener("DOMContentLoaded", function () {
       link.id = item.id;
       link.href = item.href;
       link.textContent = translations[DEFAULT_LANG][item.id];
+      // mark active link based on current page or in-page privacy
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      if (item.href === currentPage || (item.href === '#privacy' && hasPrivacySection)) {
+        link.classList.add('active');
+      }
       navbar.appendChild(link);
     });
   }

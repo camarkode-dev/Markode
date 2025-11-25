@@ -16,11 +16,12 @@
   </div>
 
   <!-- القائمة -->
-  <nav class="navbar">
+    <nav class="navbar">
     <a href="index.html" id="nav-home">الرئيسية</a>
     <a href="about.html" id="nav-about">من نحن</a>
     <a href="services.html" id="nav-services">خدماتنا</a>
-    <a href="plans.html" id="nav-plans">الباقات</a>
+    <a href="plans.html" id="nav-plans" class="active">الباقات</a>
+    <a href="privacy.html" id="nav-privacy">سياسة الخصوصية</a>
     <a href="contact.html" id="nav-contact">تواصل معنا</a>
   </nav>
 
@@ -59,10 +60,10 @@
 
       <form action="https://formspree.io/f/xeozlkkv" method="POST" onsubmit="showOrderSuccessMessage(event)">
         <input type="hidden" id="plan-name" name="plan" value="">
-        <input type="text" name="name" id="modal-name" placeholder="الاسم" required>
-        <input type="email" name="email" id="modal-email" placeholder="البريد الإلكتروني" required>
-        <input type="tel" name="phone" id="modal-phone" placeholder="رقم الهاتف" required>
-        <textarea name="details" id="modal-details" placeholder="اكتب تفاصيل الطلب" required></textarea>
+        <input type="text" name="name" id="modal-name" placeholder="الاسم" required autocomplete="name">
+        <input type="email" name="email" id="modal-email" placeholder="البريد الإلكتروني" required autocomplete="email">
+        <input type="tel" name="phone" id="modal-phone" placeholder="رقم الهاتف" required autocomplete="tel">
+        <textarea name="details" id="modal-details" placeholder="اكتب تفاصيل الطلب" required autocomplete="off"></textarea>
 
         <p id="order-success-message" class="order-success" role="status" aria-live="polite" style="display:none;">
           ✅ تم إرسال الطلب بنجاح! سنتواصل معك قريبًا.
