@@ -417,6 +417,14 @@ nav.navbar a:hover::before {
   flex-shrink: 0;
 }
 
+/* Ensure meta area grows so actions/buttons stay visible on all devices */
+.project .meta {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 100px; /* allow some room for content before actions */
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -438,6 +446,14 @@ nav.navbar a:hover::before {
   justify-content: center;
   gap: 10px;
   margin-top: auto; /* push actions to bottom so buttons are always visible */
+}
+
+/* Ensure buttons are on top and full-width on small screens */
+.actions { z-index: 2; }
+
+@media (max-width: 700px) {
+  .project .meta { min-height: 140px; }
+  .project .img { height: 180px; }
 }
 
 .actions button, 
