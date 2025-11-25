@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Force HTTPS and remove www
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.markode\.co$ [NC]
+RewriteRule ^(.*)$ https://markode.co/$1 [L,R=301]
