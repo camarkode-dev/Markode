@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Markode | الرئيسية</title>
+  <link rel="icon" href="logo.jpeg" type="image/jpeg">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="محفظة أعمال: تصميم واجهات وتجربة مستخدم + برمجة واجهات وتكامل إعلاني — أمثلة عملياتية ونتائج." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Language Switch ✅ -->
+  <div class="lang-switch">
+    <button id="ar-btn" class="lang active" data-lang="ar">AR</button>
+    <button id="en-btn" class="lang" data-lang="en">EN</button>
+  </div>
+
+  <!-- Navbar ✅ -->
+  <nav class="navbar" role="navigation" aria-label="الرئيسية">
+    <a href="index.html" id="nav-home">الرئيسية</a>
+    <a href="about.html" id="nav-about">من نحن</a>
+    <a href="services.html" id="nav-services">خدماتنا</a>
+    <a href="plans.html" id="nav-plans">الباقات</a>
+    <a href="contact.html" id="nav-contact">تواصل معنا</a>
+  </nav>
+
+  <!-- Hero Section ✅ -->
+  <section class="hero" aria-label="Hero Section">
+    <div class="hero-box">
+      <h1 id="hero-title"><strong id="hero-welcome">مرحبا بك في <span class="highlighted">Markode</span></strong></h1>
+      <p id="hero-intro">وجهتك الذكية للتسويق الرقمي وتطوير البرمجيات، نبتكر الحلول وندعم نموك الرقمي، وندخل أفكارك إلى واقع.</p>
+    </div>
+
+    <img src="picture.png" alt="Markode Cover" loading="lazy" class="hero-img">
+
+    <!-- Ticker ✅ مصحح -->
+    <div class="ticker" aria-live="polite">
+      <div class="ticker__rail" id="tickerRail">
+        <div class="ticker__track" id="tickerTrackA">
+          <div class="ticker__item">💼 تصميم واجهات احترافية</div>
+          <div class="ticker__item">🚀 تطوير ويب متقدم</div>
+          <div class="ticker__item">📊 تسويق رقمي فعّال</div>
+          <div class="ticker__item">📈 زيادة المبيعات والعائد</div>
+          <div class="ticker__item">🎯 حملات إعلانية مستهدفة</div>
+        </div>
+        <div class="ticker__track" id="tickerTrackB">
+          <div class="ticker__item">💼 تصميم واجهات احترافية</div>
+          <div class="ticker__item">🚀 تطوير ويب متقدم</div>
+          <div class="ticker__item">📊 تسويق رقمي فعّال</div>
+          <div class="ticker__item">📈 زيادة المبيعات والعائد</div>
+          <div class="ticker__item">🎯 حملات إعلانية مستهدفة</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats ✅ -->
+    <div class="stats" aria-label="إحصاءات">
+      <div class="stat">
+        <div class="num" id="statYears">+5</div>
+        <div class="label" id="statYearsLabel">سنوات خبرة</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="statResponse">~1h</div>
+        <div class="label" id="statResponseLabel">متوسط سرعة الرد</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="statProjects">200+</div>
+        <div class="label" id="statProjectsLabel">مبادرات وحملات</div>
+      </div>
+    </div>
+  </section>
+
+  <a class="skip-link" href="#main">تخطي إلى المحتوى الرئيسي</a>
+
+<section class="section-intro container">
+  <div class="col-2">
+    <div class="card card-intro">
+      <div class="card-body">
+        <h2 id="intro-title">لمحة سريعة</h2>
+        
+        <ul class="intro-points">
+          <li id="intro-point-1" class="intro-point">🎯 نحن أكثر من مجرد استوديو رقمي — شركاء نجاح يحوّلون الأفكار إلى تجارب رقمية مبتكرة.</li>
+          <li id="intro-point-2" class="intro-point">💡 دمج التصميم العصري، التطوير البرمجري المتقن، واستراتيجيات التحويل الرقمي لحلول متكاملة.</li>
+          <li id="intro-point-3" class="intro-point">👨‍💻 فريق متخصص بخبرة واسعة في UI/UX، تطوير البرمجيات، وبناء أنظمة رقمية ذكية.</li>
+          <li id="intro-point-4" class="intro-point">📈 نتائج قابلة للقياس مع سجل حافل من المشاريع المحلية والإقليمية والعالمية.</li>
+        </ul>
+        
+        <p class="muted" id="intro-note">
+          أمثلة حقيقية لمشاريع نفذناها مع نتائج ملموسة وقياس أداء فعلي.
+        </p>
+      </div>
+    </div>
+  </div>
+
+     <div class="col-2">
+    <div class="card card-tech">
+      <div class="card-body">
+        <h2 id="tech-title">خلاصة تقنية</h2>
+
+        <ul class="tech-points">
+          <li id="tech-point-1" class="tech-point">⚛️ <strong>React & Next.js</strong> — بناء واجهات ديناميكية وسريعة الأداء مع تجربة مستخدم سلسة.</li>
+          <li id="tech-point-2" class="tech-point">🎨 <strong>Figma</strong> — تصميم واجهات حديثة وتجربة مستخدم متكاملة قبل التنفيذ البرمجي.</li>
+          <li id="tech-point-3" class="tech-point">📈 <strong>التسويق الرقمي</strong> — Google Ads، TikTok Ads، Facebook & Snapchat لزيادة الوصول وتحقيق التحويل.</li>
+          <li id="tech-point-4" class="tech-point">🔍 <strong>SEO وتحليل الأداء</strong> — تحسين محركات البحث وقياس النتائج بدقة لزيادة التأثير الرقمي.</li>
+        </ul>
+
+        <p class="muted" id="tech-desc">
+          نغطي كل مرحلة من التصميم إلى التنفيذ، مع دمج الحملات الإعلانية وتتبع الأداء لضمان نتائج ملموسة واحترافية.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Header & Main Content ✅ -->
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+             alt="لوغو الشركة" width="56" height="56" loading="lazy" decoding="async" />
+        <div>
+          <h1 id="header-title">ماركود — محفظة الأعمال</h1>
+          <p class="lead" id="header-lead">تصميم واجهات وتجربة مستخدم + برمجة واجهات وتكامل إعلاني — أمثلة عملياتية وأرقام أداء</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main" aria-label="المحتوى الرئيسي">
+
+<!-- Projects Section -->
+<section id="projects" aria-labelledby="projects-title">
+  <h1 id="projects-title">نماذج المشاريع</h1>
+  <div class="projects">
+
+    <!-- Project 1 -->
+    <article class="project card" aria-labelledby="p1-title">
+      <div class="img" style="background-image:url('123.png');"></div>
+
+      <div class="meta">
+        <h3 id="project-title-1">Ride Me — تطبيق بيع سيارات</h3>
+        <p id="project-desc-1" class="muted">
+          تطبيق لعرض وبيع السيارات مع نظام فلترة متقدم وربط الدفع وحجوزات المعاينة.
+        </p>
+
+        <div class="tags">
+          <span id="tag-ui" class="tag">UI</span>
+          <span id="tag-ux" class="tag">UX</span>
+          <span id="tag-case-study" class="tag">Case Study</span>
+        </div>
+
+        <div class="actions">
+          <button id="project1-case-btn" class="btn" onclick="openProjectModal('p1')">عرض الحالة</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project card" aria-labelledby="p2-title">
+      <div class="img" style="background-image:url('124.png');"></div>
+
+      <div class="meta">
+        <h3 id="project-title-2">موقع عقاري احترافي</h3>
+        <p id="project-desc-2" class="muted">
+          موقع عقاري للعروض مع خرائط تفاعلية وصفحات عقارات كاملة.
+        </p>
+
+        <div class="tags">
+          <span id="tag-mobile" class="tag">Mobile</span>
+          <span id="tag-ux-2" class="tag">UX</span>
+          <span id="tag-rental" class="tag">Rental</span>
+        </div>
+
+        <div class="actions">
+          <button id="project2-case-btn" class="btn" onclick="openProjectModal('p2')">عرض الحالة</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project card">
+     <div class="img" style="background-image:url('125.png');"></div>
+
+      <div class="meta">
+        <h3 id="project-title-3">متجر إلكتروني شامل</h3>
+        <p id="project-desc-3" class="muted">
+          متجر متكامل بدفع آمن وسلة منتجات وإدارة مخزون وخدمات شحن.
+        </p>
+
+        <div class="tags">
+          <span id="tag-system" class="tag">System</span>
+          <span id="tag-dashboard" class="tag">Dashboard</span>
+        </div>
+
+        <div class="actions">
+          <button id="project3-case-btn" class="btn" onclick="openProjectModal('p3')">عرض الحالة</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="project card">
+    <div class="img" style="background-image:url('126.png');"></div>
+    
+      <div class="meta">
+        <h3 id="project-title-4">تطبيق طلب وتوصيل مياه</h3>
+        <p id="project-desc-4" class="muted">
+          تطبيق يسمح بطلب المياه مع تتبع الطلبات وإدارة السائقين.
+        </p>
+
+        <div class="tags">
+          <span id="tag-ux" class="tag">UX</span>
+          <span id="tag-dashboard" class="tag">Dashboard</span>
+        </div>
+
+        <div class="actions">
+          <button id="project4-case-btn" class="btn" onclick="openProjectModal('p4')">عرض الحالة</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <!-- Project Modal ✅ -->
+    <div id="modal" class="modal">
+      <div class="modal-content" tabindex="-1" aria-modal="true" role="dialog">
+        <span class="close" id="modalCloseBtn" tabindex="0" aria-label="إغلاق">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Packages Section ✅ -->
+    <section id="packages">
+      <h1 id="packages-title">الباقات</h1>
+      <div class="cards">
+        <div class="card">
+          <h3 id="card-title-1">باقة الناشئين</h3>
+          <p id="card-desc-1">تصميم هوية + موقع تعريفي + حملة انطلاقية.</p>
+          <button id="card-btn-1" onclick="openOrderModal('باقة الناشئين')" class="btn">اطلب الآن</button>
+        </div>
+
+        <div class="card">
+          <h3 id="card-title-2">باقة الشركات</h3>
+          <p id="card-desc-2">حلول متكاملة للتسويق وتطوير المواقع للشركات.</p>
+          <button id="card-btn-2" onclick="openOrderModal('باقة الشركات')" class="btn">اطلب الآن</button>
+        </div>
+
+        <div class="card">
+          <h3 id="card-title-3">باقة التطوير</h3>
+          <p id="card-desc-3">خدمة تطوير تطبيق أو نظام مخصص حسب الطلب.</p>
+          <button id="card-btn-3" onclick="location.href='contact.html'" class="btn">تواصل معنا</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Modal ✅ -->
+    <div id="orderModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="modal-title" style="text-align: center;">طلب الباقة</h3>
+
+        <form action="https://formspree.io/f/xeozlkkv" method="POST" onsubmit="showOrderSuccessMessage(event)">
+          <input type="hidden" id="plan-name" name="plan" value="">
+          <input type="text" name="name" id="modal-name" placeholder="الاسم" required>
+          <input type="email" name="email" id="modal-email" placeholder="البريد الإلكتروني" required>
+          <input type="tel" name="phone" id="modal-phone" placeholder="رقم الهاتف" required>
+          <textarea name="details" id="modal-details" placeholder="اكتب تفاصيل الطلب" required></textarea>
+
+          <p id="order-success-message" style="display:none; color: #00ff00; text-align: center; font-weight: bold; margin: 10px 0;">
+            ✅ تم إرسال الطلب بنجاح! سنتواصل معك قريبًا.
+          </p>
+
+          <button type="submit" id="modal-submit" class="btn" style="width: 100%; margin-top: 10px;">إرسال الطلب</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Quick Quote Section ✅ -->
+    <section id="quote" class="section">
+      <div class="box">
+        <h2 id="qq-title">تقدير سعر فوري</h2>
+        <p class="muted" id="qq-desc">اختر نوع الخدمة والخيارات لتحصل على نطاق تقديري سريع.</p>
+
+        <div class="quote-grid">
+          <div class="row">
+            <label for="qq-service" id="qq-service-label">نوع الخدمة</label>
+            <select id="qq-service">
+              <option value="identity" id="qq-op-identity">هوية بصرية</option>
+              <option value="website" id="qq-op-website">موقع ويب</option>
+              <option value="app" id="qq-op-app">تطبيق جوال</option>
+              <option value="marketing" id="qq-op-marketing">تسويق رقمي</option>
+              <option value="ads" id="qq-op-ads">حملات إعلانية</option>
+            </select>
+          </div>
+          
+          <div class="row">
+            <label for="qq-budget" id="qq-budget-label">الميزانية المتوقعة</label>
+            <input type="range" id="qq-budget" min="100" max="200000" step="100" value="100"/>
+            <div><span class="badge" id="qq-budget-out">100 ر.س</span></div>
+          </div>
+          
+          <div class="row">
+            <label id="qq-options-label">خيارات إضافية</label>
+            <label><input type="checkbox" id="qq-seo"> <span id="qq-seo-label">تحسين محركات البحث (SEO)</span></label>
+            <label><input type="checkbox" id="qq-cms"> <span id="qq-cms-label">لوحة إدارة محتوى (CMS)</span></label>
+            <label><input type="checkbox" id="qq-multi"> <span id="qq-multi-label">دعم لغتين</span></label>
+          </div>
+          
+          <div class="row">
+            <label for="qq-time" id="qq-time-label">الإطار الزمني</label>
+            <select id="qq-time">
+              <option value="normal" id="qq-time-normal">عادي</option>
+              <option value="rush" id="qq-time-rush">عاجل</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="estimate">
+          <strong id="qq-range-title">النطاق التقديري</strong>
+          <div><span id="qq-low">—</span> - <span id="qq-high">—</span></div>
+        </div>
+
+        <div class="quote-actions">
+          <button class="btn secondary" id="qq-copy">نسخ التقدير</button>
+          <a href="https://wa.me/966552083166?text=مرحبا%20أريد%20تقدير%20سريع" target="_blank" class="btn" id="qq-send-quote">📩 أرسل عبر واتساب</a>
+        </div>
+
+        <p class="muted" id="qq-note">* تقدير مبدئي للإرشاد فقط — السعر النهائي بعد مكالمة تعريفية قصيرة.</p>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <!-- Chat FAB -->
+  <button class="fab chat" id="chatFab" aria-label="Chat" title="Chat">💬</button>
+  <a id="waFab" class="fab wa" aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <!-- phone handset glyph, uses currentColor so it appears white on the green FAB -->
+      <path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h2.5a1 1 0 011 1c0 1.35.26 2.67.76 3.88.18.42.07.9-.27 1.11l-2.2 2.2z" />
+    </svg>
+  </a>
+
+  <!-- Chat Box ✅ -->
+  <div class="chat-box" id="chatBox" aria-live="polite" aria-label="محادثة">
+    <div class="chat-head">
+      <strong id="chat-title">Markode</strong>
+      <button id="chatClose" aria-label="Close Chat">✕</button>
+    </div>
+    <div class="chat-body" id="chatBody"></div>
+    <form class="chat-form" id="chatForm">
+      <input type="text" id="chatInput" placeholder="اكتب رسالتك..." aria-label="رسالة">
+      <button type="submit" class="btn">إرسال</button>
+    </form>
+  </div>
+
+  <script src="app.js" defer></script>
+
+</body>
+</html>
+
+
