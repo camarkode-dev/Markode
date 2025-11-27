@@ -41,7 +41,7 @@
       <p id="hero-intro">وجهتك الذكية للتسويق الرقمي وتطوير البرمجيات، نبتكر الحلول وندعم نموك الرقمي، وندخل أفكارك إلى واقع.</p>
     </div>
 
-    <img src="picture.png" alt="Markode Cover" loading="lazy" class="hero-img">
+    <img src="piuter.png" alt="Markode Cover" loading="lazy" class="hero-img">
 
     <!-- Ticker ✅ مصحح -->
     <div class="ticker" aria-live="polite">
@@ -145,7 +145,7 @@
 
     <!-- Project 1 -->
     <article class="project card" aria-labelledby="p1-title">
-      <div class="img" style="background-image:url('123.png');"></div>
+      <div class="img" style="background-image:url('123.jpg');"></div>
 
       <div class="meta">
         <h3 id="project-title-1">Ride Me — تطبيق بيع سيارات</h3>
@@ -167,7 +167,7 @@
 
     <!-- Project 2 -->
     <article class="project card" aria-labelledby="p2-title">
-      <div class="img" style="background-image:url('124.png');"></div>
+      <div class="img" style="background-image:url('124.jpg');"></div>
 
       <div class="meta">
         <h3 id="project-title-2">موقع عقاري احترافي</h3>
@@ -189,7 +189,7 @@
 
     <!-- Project 3 -->
     <article class="project card">
-     <div class="img" style="background-image:url('125.png');"></div>
+     <div class="img" style="background-image:url('125.jpg');"></div>
 
       <div class="meta">
         <h3 id="project-title-3">متجر إلكتروني شامل</h3>
@@ -210,7 +210,7 @@
 
     <!-- Project 4 -->
     <article class="project card">
-    <div class="img" style="background-image:url('126.png');"></div>
+    <div class="img" style="background-image:url('126.jpg');"></div>
     
       <div class="meta">
         <h3 id="project-title-4">تطبيق طلب وتوصيل مياه</h3>
@@ -272,10 +272,17 @@
 
         <form action="https://formspree.io/f/xeozlkkv" method="POST" onsubmit="showOrderSuccessMessage(event)">
           <input type="hidden" id="plan-name" name="plan" value="">
-          <input type="text" name="name" id="modal-name" placeholder="الاسم" required>
-          <input type="email" name="email" id="modal-email" placeholder="البريد الإلكتروني" required>
-          <input type="tel" name="phone" id="modal-phone" placeholder="رقم الهاتف" required>
-          <textarea name="details" id="modal-details" placeholder="اكتب تفاصيل الطلب" required></textarea>
+          <label for="modal-name" class="visually-hidden">الاسم</label>
+          <input type="text" name="name" id="modal-name" placeholder="الاسم" autocomplete="name" required>
+
+          <label for="modal-email" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" name="email" id="modal-email" placeholder="البريد الإلكتروني" autocomplete="email" required>
+
+          <label for="modal-phone" class="visually-hidden">رقم الهاتف</label>
+          <input type="tel" name="phone" id="modal-phone" placeholder="رقم الهاتف" autocomplete="tel" required>
+
+          <label for="modal-details" class="visually-hidden">تفاصيل الطلب</label>
+          <textarea name="details" id="modal-details" placeholder="اكتب تفاصيل الطلب" autocomplete="off" required></textarea>
 
           <p id="order-success-message" style="display:none; color: #00ff00; text-align: center; font-weight: bold; margin: 10px 0;">
             ✅ تم إرسال الطلب بنجاح! سنتواصل معك قريبًا.
@@ -312,10 +319,12 @@
           </div>
           
           <div class="row">
-            <label id="qq-options-label">خيارات إضافية</label>
-            <label><input type="checkbox" id="qq-seo"> <span id="qq-seo-label">تحسين محركات البحث (SEO)</span></label>
-            <label><input type="checkbox" id="qq-cms"> <span id="qq-cms-label">لوحة إدارة محتوى (CMS)</span></label>
-            <label><input type="checkbox" id="qq-multi"> <span id="qq-multi-label">دعم لغتين</span></label>
+            <fieldset class="qq-options" aria-labelledby="qq-options-label">
+              <legend id="qq-options-label">خيارات إضافية</legend>
+              <label><input type="checkbox" id="qq-seo"> <span id="qq-seo-label">تحسين محركات البحث (SEO)</span></label>
+              <label><input type="checkbox" id="qq-cms"> <span id="qq-cms-label">لوحة إدارة محتوى (CMS)</span></label>
+              <label><input type="checkbox" id="qq-multi"> <span id="qq-multi-label">دعم لغتين</span></label>
+            </fieldset>
           </div>
           
           <div class="row">
@@ -333,9 +342,12 @@
         </div>
 
         <div class="quote-actions">
-          <button class="btn secondary" id="qq-copy">نسخ التقدير</button>
-          <a href="https://wa.me/966552083166?text=مرحبا%20أريد%20تقدير%20سريع" target="_blank" class="btn" id="qq-send-quote">📩 أرسل عبر واتساب</a>
-        </div>
+  <button class="btn secondary" id="qq-copy">نسخ التقدير</button>
+  <a href="https://wa.me/966552083166?text=مرحبا%20أريد%20تقدير%20سريع"
+     target="_blank" rel="noopener noreferrer"
+     class="btn" id="qq-send-quote">📩 أرسل عبر واتساب</a>
+</div>
+
 
         <p class="muted" id="qq-note">* تقدير مبدئي للإرشاد فقط — السعر النهائي بعد مكالمة تعريفية قصيرة.</p>
       </div>

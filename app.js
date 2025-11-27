@@ -539,7 +539,7 @@ document.addEventListener("DOMContentLoaded", function () {
     case3: `
       <div class="case-card">
         <h2>متجر إلكتروني شامل</h2>
-        <img src="125.png" alt="متجر إلكتروني شامل" style="width:100%;margin:12px 0;border-radius:12px;">
+        <img src="125.jpg" alt="متجر إلكتروني شامل" style="width:100%;margin:12px 0;border-radius:12px;">
         <p>منصة تجارة إلكترونية متكاملة تضم كتالوج منتجات، سلة مشتريات، طرق شحن متعددة، وحسابات عملاء مع لوحة تحكم للبائعين.</p>
         <div class="case-meta"><strong>النتيجة:</strong> زيادة معدل التحويل وتقليل التخلي عن السلة عبر تحسين تجربة الدفع وتتبّع الطلبات.</div>
         <ul class="case-features">
@@ -568,25 +568,25 @@ const PROJECTS_DATA = {
   p1: {
     title: "Ride Me — تطبيق بيع سيارات",
     desc: "تطبيق احترافي لبيع السيارات مع فلترة، دفع، حجز معاينة، وتدفق تجربة مستخدم متكامل.",
-    img: "123.png",
+    img: "123.jpg",
     link: "https://www.behance.net/gallery/233201723/Ride-me/modules/1338471047"
   },
   p2: {
     title: "موقع عقاري احترافي",
     desc: "موقع عقاري لعرض العقارات مع خرائط، صفحات مفصلة، ونظام وكالات.",
-    img: "124.png",
+    img: "124.jpg",
     link: "124"
   },
   p3: {
     title: "متجر إلكتروني شامل",
     desc: "متجر إلكتروني كامل بنظام شحن ومخزون وعمليات دفع متكاملة.",
-    img: "125.png",
+    img: "125.jpg",
     link: "https://www.behance.net/gallery/227235501/Headphone-HN"
   },
   p4: {
     title: "تطبيق طلب وتوصيل مياه",
     desc: "تطبيق متكامل لطلب المياه وتتبع الطلبات وإدارة السائقين.",
-    img: "126.png",
+    img: "126.jpg",
     link: "https://www.behance.net/gallery/229058143/Tanni-Dabba"
   }
 };
